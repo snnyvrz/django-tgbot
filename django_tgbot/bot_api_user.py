@@ -87,7 +87,7 @@ class BotAPIUser:
 
     def set_token(self, token):
         self.token = token
-        self.api_url = 'https://api.telegram.org/bot{}'.format(self.token)
+        self.api_url = 'https://tapi.bale.ai/bot{}'.format(self.token)
 
     def send_request(self, method, data=None, files=None):
         if data is None:
